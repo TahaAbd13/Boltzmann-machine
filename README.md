@@ -59,13 +59,17 @@ A **Restricted Boltzmann Machine (RBM)** is an energy-based probabilistic model 
 
 The RBM learns by minimizing an energy function that defines the probability distribution over visible and hidden units. The probability of a given state (combination of visible and hidden units) is given by:
 
-$ P(v, h) = \frac{1}{Z} \exp (-E(v, h)) $
+$$
+P(v, h) = \frac{1}{Z} \exp (-E(v, h)) 
+$$
 
 where \( E(v, h) \) is the energy function defined as:
 
-$ E(v, h) = -v^T W h - v^T b - h^T c $
+$$
+E(v, h) = -v^T W h - v^T b - h^T c 
+$$
 
-Here, \( W \) represents the weights connecting the visible and hidden layers, and \( b \) and \( c \) are the biases of the respective layers.
+Here, $ W $ represents the weights connecting the visible and hidden layers, and $ b $ and $ c $ are the biases of the respective layers.
 
 ### Training an RBM Using Contrastive Divergence
 
@@ -81,7 +85,9 @@ This process is repeated for multiple epochs until the RBM learns meaningful fea
 
 A useful metric for evaluating RBM performance is **Free Energy**, which measures how well the RBM represents a given visible state. The free energy function is defined as:
 
-$ F(v) = -v^T b - \sum_{j} \log (1 + e^{(W^T v + c)_j}) $
+$$ 
+F(v) = -v^T b - \sum_{j} \log (1 + e^{(W^T v + c)_j}) 
+$$
 
 Lower free energy values indicate that the RBM assigns higher probabilities to the given input, meaning it has successfully learned to represent the data distribution.
 
