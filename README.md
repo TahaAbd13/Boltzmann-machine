@@ -34,7 +34,7 @@ To run the notebooks in this repository, you will need Python and several librar
 
 These dependencies can be installed using the following command:
 ```bash
-pip install torch torchvision matplotlib numpy
+pip install torch tensorflow matplotlib numpy scikit-learn seaborn
 ```
 
 ### Running the Notebooks
