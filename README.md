@@ -41,8 +41,8 @@ pip install torch torchvision matplotlib numpy
 To execute the notebooks, follow these steps:
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-repository-name.git
-   cd your-repository-name
+   git clone https://github.com/Boltzmann-machine.git
+   cd Boltzmann-machine
    ```
 2. Open Jupyter Notebook:
    ```bash
