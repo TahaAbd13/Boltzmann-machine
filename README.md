@@ -28,9 +28,11 @@ This notebook builds upon the first phase by diving deeper into the probabilisti
 To run the notebooks in this repository, you will need Python and several libraries installed. The following dependencies are required:
 
 - `torch`
-- `torchvision`
+- `tensorflow`
 - `matplotlib`
 - `numpy`
+- `sklearn`
+- `seaborn`
 
 These dependencies can be installed using the following command:
 ```bash
